@@ -1,0 +1,94 @@
+:root{--bg:#f7f9fc;
+    --card:#fff;
+    --accent:#0b6efd;
+    --muted:#6b7280;
+    --border:#e6e9ee}
+*{box-sizing:border-box}
+body{
+    margin:0;
+    font-family:Inter,system-ui,Roboto,Arial;
+    background:var(--bg);
+    color:#0f1724;
+    background-image: url("../images/mountain.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+.container{max-width:980px;
+    margin:0 auto;
+    padding:16px}
+.top{display:flex;
+    flex-direction:column;
+    gap:12px}
+
+.top h1{margin:0;
+    font-size:1.25rem;
+}
+
+.logo_design1{
+    color:green;
+    font:bolder;
+    font-size:50px; 
+}
+.logo_design2{
+    color: rgb(34, 7, 145);
+    font-size:medium;
+}
+.nav{display:flex;
+    gap:8px;
+    flex-wrap:wrap;
+}
+a,button{padding:10px 12px;
+    border-radius:8px;
+    border:1px solid var(--border);
+    background:var(--card);
+    text-decoration:none;
+    color:inherit;cursor:pointer}
+.btn{background:var(--accent);
+    color:#12a6cf;
+    border-color:rgba(11,110,253,0.9)}
+.outline{background:transparent}
+.card{background:var(--card);
+    padding:14px;
+    border-radius:10px;
+    border:1px solid var(--border);
+    margin-top:12px}
+.cta-row{display:flex;
+    gap:10px;
+    margin-top:12px}
+.jobs{display:grid;
+    grid-template-columns:1fr;
+    gap:12px}
+.job{display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px;
+    border-radius:8px;
+    border:1px solid var(--border);
+    background:#fff}
+.title{margin:0;
+    font-weight:600}
+.company{margin:6px 0;
+    color:var(--muted)}
+.meta{color:var(--muted);
+    font-size:0.9rem}
+.row{display:flex;
+    gap:8px;
+    justify-content:flex-end;
+    margin-top:10px}
+.muted{color:var(--muted)}
+.small{font-size:0.9rem}
+.hidden{display:none}
+.back{background:transparent;
+    border:none;color:var(--accent);
+    margin-bottom:10px}
+label{display:block;
+    margin:8px 0}
+input[type="text"],input[type="email"],textarea,input[type="file"]{width:100%;
+    padding:10px;
+    border-radius:8px;
+    border:1px solid var(--border)}
+@media(min-width:700px){.top{flex-direction:row;
+    justify-content:space-between;
+    align-items:center}.jobs{grid-template-columns:repeat(2,minmax(240px,1fr))}}
+@media(min-width:1000px){.jobs{grid-template-columns:repeat(3,minmax(240px,1fr))}}

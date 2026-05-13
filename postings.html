@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>FAKO JOBS</title>
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body data-page="post">
+  <header class="top container">
+    <h1>Post a Job</h1>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="listings.html">Find Jobs</a>
+      <a href="postings.html">Post a Job</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <form id="postJobForm" novalidate>
+        <label>Company name <input name="company" required></label>
+        <label>Job title <input name="title" required></label>
+        <label>Location <input name="location" placeholder="e.g., Buea" required></label>
+        <label>Description <textarea name="desc" rows="6" required></textarea></label>
+        <div class="row">
+          <button type="submit" class="btn">Post Job</button>
+          <a href="index.html" class="btn outline">Cancel</a>
+        </div>
+        <p id="postMsg" class="muted"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="container muted small">web developement project for level 200 students from LMUI2026</footer>
+  <script src="js/site.js" defer></script>
+</body>
+</html>
