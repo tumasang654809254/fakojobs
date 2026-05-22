@@ -19,12 +19,12 @@
 
   <main class="container">
     <button class="back"><a href="#" id="backToDetails">← Back</a></button>
-    <section class="card">
-      <h2 id="applyFor">Apply</h2>
+    <section class="card card_center">
+      <h2 id="applyFor" style="color:yellow; font-size:50px;">Apply</h2>
       <form id="applyForm" novalidate>
-        <label>Full Name <input name="name" required></label>
-        <label>Email <input name="email" type="email" required></label>
-        <label>Phone Number <input name="phone" required></label>
+        <label>Full Name <input name="name" type="text" placeholder="Web Developement" required></label>
+        <label>Email <input name="email" type="email" placeholder="webdev10@gmail.com" required></label>
+        <label>Phone Number <input name="phone" type="tel" placeholder="2376********" required></label>
         <label>Upload CV (simulated) <input name="cv" type="file" accept=".pdf,.doc,.docx"></label>
         <div class="row">
           <button type="submit" class="btn">Submit Application</button>
@@ -35,7 +35,7 @@
     </section>
   </main>
 
-  <footer class="container muted small">web developement project for level 200 students from LMUI2026</footer>
+  <footer class="container muted small align_item">web developement project for level 200 students from LMUI2026</footer>
   <script src="js/site.js" defer></script>
 </body>
 </html>
