@@ -286,7 +286,7 @@ input[type="text"],input[type="email"],textarea,input[type="file"],input[type="t
     font-weight: bold;
 }
 #postJobForm input,textarea{
-    color:black;
+    color:white;
     font-size: small;
     font-weight: lighter;
     background-color: #353E43;
