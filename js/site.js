@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // It takes the input s if its empty or null it treats it as an empty stringvto prevent errors
   const qs = s => document.querySelector(s);
   const qsa = s => Array.from(document.querySelectorAll(s));
+  //Get the specific parameter value by its key
   const getParam = (k) => new URLSearchParams(location.search).get(k);
   //It saves items to local storage in a as a string 
   const save = (k,v) => localStorage.setItem(k, JSON.stringify(v));
@@ -86,6 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // PAGE: apply (form validation)
   if(PAGE === 'apply'){
+    //
     const id = getParam('id');
     const jobs = getJobs();
     const job = jobs.find(x => String(x.id) === String(id));
